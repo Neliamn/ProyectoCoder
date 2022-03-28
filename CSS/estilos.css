@@ -158,6 +158,37 @@ footer img {
     justify-content: center;
 }
 
+/* Animaciones */
+
+.personajeDetalle {
+    background: rgb(115,142,240);
+    background: radial-gradient(rgb(225, 226, 231) 25%, rgb(3 229 253) 100%);
+}
+
+@keyframes rotation {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.expandDescripcion {
+    display: none;
+}
+.personajes a:hover .expandDescripcion {
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.personajes a:hover{
+    display:flex;
+    flex-direction: row;
+    margin-top: 25px;
+    color: black;
+}
+
+.personajes a:hover .personaje img{
+    margin-top: 25px;
+}
 
 /*artefactos*/
 
@@ -322,6 +353,7 @@ footer img {
     background-position-x: 4px;
     background-position-y: 6px;
     background-repeat: no-repeat;
+    animation:  4s linear 0s reverse none infinite rotation;
 }
 
 /*armas*/
