@@ -3,7 +3,7 @@ padding: 0;}
 
 
 
-    .contenedorGrid {  display: grid;
+    /* .contenedorGrid {  display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3.1fr 0.3fr;
         gap: 20px 0px;
@@ -14,7 +14,7 @@ padding: 0;}
         "mainGrid"
         "footerGrid";
         align-content: space-between;
-    }
+    } */
   
     .logoGrid { grid-area: logoGrid; }
     .logoGrid img {
@@ -22,13 +22,18 @@ padding: 0;}
         height: auto;
     }
     .menuGrid { grid-area: menuGrid; }
+
+    .menuGrid nav{
+        background-color: transparent !important;
+    }
   
+    .menuGrid nav button{
+        background-color: white;
+    }
+
     .footerGrid { grid-area: footerGrid; 
-        display: flex;
-        flex-direction: column;    
         margin-top: 20px;
         position: relative;
-        justify-content: space-between;
     }
     .footerGrid p {
         align-self: center;
@@ -37,6 +42,7 @@ padding: 0;}
   
   .mainGrid { grid-area: mainGrid; 
     margin-bottom: 34px;
+    padding: 20px;
   }
 
 
@@ -89,7 +95,7 @@ body {
 .menu li a{
     list-style: none;
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .submenu {
@@ -97,6 +103,7 @@ body {
     position: absolute;
     margin-top: 6px;
     margin-left:20px;
+    z-index: 100;
 }
 
 .submenu li {
@@ -117,14 +124,12 @@ body {
 #contenedor {
     min-height: 100%;
     padding: 20px;
-    margin: 1.5% 4%;
     background-color: #ffffff;
     border-radius: 4px;
 }
 
 
 footer {
-    width: 100%;
     bottom: 0px;
     background-color: rgb(3, 89, 111);
     padding-top: 10px;
@@ -136,6 +141,7 @@ footer img {
 }
 
 .footer_title {
+    text-align: center;
     font-size: 25px;
     color: #ffffff;
     font-weight: bold;
@@ -476,6 +482,11 @@ footer img {
         text-align: center; 
     
     }
+
+    .menuGrid nav button{
+        display: block;
+    }
+
     header {
         position: relative;
     }
@@ -592,6 +603,10 @@ footer img {
         color: #ffffff;
     }
     
+    .menuGrid nav button{
+        display: none;
+    }
+
     .submenu {
         display: none;
         position: absolute;

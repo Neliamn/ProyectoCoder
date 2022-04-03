@@ -1,162 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour por Teyvat</title>
-    <link rel="icon" href="../Multimedia/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Multimedia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/estilos.css">
+
 </head>
+
 <body>
-    
-    <div class="contenedorGrid">
-        <div class="logoGrid">
-            <img src="../Multimedia/logo.png" alt="">
+    <div class="container-fluid">
+        <div class="logoGrid row">
+            <img src="../Multimedia/logo.png" alt="" class="col-6">
         </div>
-        <header class="menuGrid">
-        <nav class="navegador">
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="armas.html">Armas</a></li>
-                <li><a href="artefactos.html">Artefactos</a></li>
-                <li>
-                    <a href="personajes.html">Personajes</a>
-                    <ul class="submenu">
-                        <li><a href="hydro.html">Hydro</a></li>
-                        <li><a href="cryo.html">Cryo</a></li>
-                        <li><a href="pyro.html">Pyro</a></li>
-                        <li><a href="anemo.html">Anemo</a></li>
-                        <li><a href="geo.html">Geo</a></li>
-                        <li><a href="electro.html">Electro</a></li>
+        <header class="menuGrid row">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light col-12">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse row" id="navegador">
+                    <ul class="navbar-nav menu col-12">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Paginas/armas.html">Armas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Paginas/artefactos.html">Artefactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Paginas/personajes.html">Personajes</a>
+                            <ul class="submenu">
+                                <li><a href="../Paginas/hydro.html">Hydro</a></li>
+                                <li><a href="../Paginas/cryo.html">Cryo</a></li>
+                                <li><a href="../Paginas/pyro.html">Pyro</a></li>
+                                <li><a href="../Paginas/anemo.html">Anemo</a></li>
+                                <li><a href="../Paginas/geo.html">Geo</a></li>
+                                <li><a href="../Paginas/electro.html">Electro</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </nav>
-       </header>
-       <main class="mainGrid">
-        <div id="contenedor"> 
-            <div class="contenedorArmas">
-                <img src="../Multimedia/armas.jpg" alt="">
-                <div>
-                    <h2>Armas</h2>
-                    <p>Las armas en Genshin Impact son equipamientos que ayudan al jugador durante 
-                    sus misiones al infligir daño a los enemigos.</p>
-                    <h3>Tipos de armas</h3>
-                    <ul>
-                        <li><a href="#arcos">Arcos</a></li>
-                        <li><a href="#catalizador">Catalizador</a></li>
-                        <li><a href="#mandoble">Mandoble</a></li>
-                        <li><a href="#espada">Espada</a></li>
-                        <li><a href="#lanza">Lanza</a></li>
-                    </ul>
-                
-            
-                    <h3>Rareza</h3>
-                    <p>Todas las armas tienen una rareza que va desde 1 estrella hasta 5 estrellas. 
-                    Las armas con mayor rareza tienen un mayor crecimiento en sus estadísticas que las armas con menor rareza, pero son más difíciles de obtener.</p>
+                </div>
+            </nav>
+        </header>
+        <main class="mainGrid row">
+            <div id="contenedor" class="col-12">
+                <div class="contenedorArmas">
+                    <img src="../Multimedia/armas.jpg" alt="">
+                    <div>
+                        <h2>Armas</h2>
+                        <p>Las armas en Genshin Impact son equipamientos que ayudan al jugador durante
+                            sus misiones al infligir daño a los enemigos.</p>
+                        <h3>Tipos de armas</h3>
+                        <ul>
+                            <li><a href="#arcos">Arcos</a></li>
+                            <li><a href="#catalizador">Catalizador</a></li>
+                            <li><a href="#mandoble">Mandoble</a></li>
+                            <li><a href="#espada">Espada</a></li>
+                            <li><a href="#lanza">Lanza</a></li>
+                        </ul>
+
+
+                        <h3>Rareza</h3>
+                        <p>Todas las armas tienen una rareza que va desde 1 estrella hasta 5 estrellas.
+                            Las armas con mayor rareza tienen un mayor crecimiento en sus estadísticas que las armas con
+                            menor rareza, pero son más difíciles de obtener.</p>
+                    </div>
+                </div>
+                <h3>Obtención</h3>
+                <ul>
+                    <li>Armas de 5 estrellas: Sólo pueden obtenerse a través de Deseos.</li>
+                    <li>Armas de 4 estrellas: Pueden obtenerse a través de Deseos y algunas pueden crearse a través de
+                        la Forja.</li>
+                    <li>Armas de 3 estrellas, 2 estrellas y 1 estrella: Pueden ser dejadas como recompensa al derrotar a
+                        algunos jefes, u obtenerse de los cofres en el mundo abierto.</li>
+                </ul>
+                <hr class="separador">
+                <div class="tituloarmas">
+                    <div class="estiloarmas row" id="arcos">
+                        <h3>Arcos</h3>
+                        <hr class="subrayado">
+                        
+                            <div class="armaTarjeta">
+                                <img class="arma5" src="../Multimedia/Arcos/Agitador_del_Relampago.png" alt="">
+                                <div class="tarjeta">
+                                    <h4>Agitador del Relámpago</h4>
+                                    <ul>
+                                        <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                        <li>Stat básica: ATQ Base 46.0</li>
+                                        <li>Stat secundaria: 14.4 Daño CRIT%</li>
+                                        <li>Obtención: Gachapón</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="armaTarjeta">
+                                <img class="arma5" src="../Multimedia/Arcos/Alas_Celestiales.png" alt="">
+                                <div class="tarjeta">
+                                    <h4>Alas Celestiales</h4>
+                                    <ul>
+                                        <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                        <li>Stat básica: ATQ Base 48.0</li>
+                                        <li>Stat secundaria: 4.8 Prob. CRIT%</li>
+                                        <li>Obtención: Gachapón</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="armaTarjeta">
+                                <img class="arma5" src="../Multimedia/Arcos/Arco_de_Amos.png" alt="">
+                                <div class="tarjeta">
+                                    <h4>Arco de Amos</h4>
+                                    <ul>
+                                        <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                        <li>Stat básica: ATQ Base 46.0</li>
+                                        <li>Stat secundaria: 10.8 ATQ%</li>
+                                        <li>Obtención: Gachapón</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="armaTarjeta">
+                                <img class="arma5" src="../Multimedia/Arcos/Elegia_del_Fin.png" alt="">
+                                <div class="tarjeta">
+                                    <h4>Elegía del Fin</h4>
+                                    <ul>
+                                        <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                        <li>Stat básica: ATQ Base 46.0</li>
+                                        <li>Stat secundaria: 12.0 Recarga de Energía% </li>
+                                        <li>Obtención: Gachapón</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="armaTarjeta">
+                                <img class="arma5" src="../Multimedia/Arcos/Estrella_Invernal.png" alt="">
+                                <div class="tarjeta">
+                                    <h4>Estrella Invernal</h4>
+                                    <ul>
+                                        <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                        <li>Stat básica: ATQ Base 46.0</li>
+                                        <li>Stat secundaria: 7.2 Prob. CRIT%</li>
+                                        <li>Obtención: Gachapón</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="estiloarmas" id="catalizador">
+                        <h3>Catalizador</h3>
+
+                    </div>
+                    <div class="estiloarmas" id="mandoble">
+                        <h3>Mandoble</h3>
+                    </div>
+                    <div class="estiloarmas" id="espada">
+                        <h3>Espada</h3>
+                    </div>
+                    <div class="estiloarmas" id="lanza">
+                        <h3>Lanza</h3>
+                    </div>
                 </div>
             </div>
-            <h3>Obtención</h3>
-            <ul>
-                <li>Armas de 5 estrellas: Sólo pueden obtenerse a través de Deseos.</li>
-                <li>Armas de 4 estrellas: Pueden obtenerse a través de Deseos y algunas pueden crearse a través de la Forja.</li>
-                <li>Armas de 3 estrellas, 2 estrellas y 1 estrella: Pueden ser dejadas como recompensa al derrotar a algunos jefes, u obtenerse de los cofres en el mundo abierto.</li>
-            </ul>
-            <hr class="separador">
-            <div class="tituloarmas"> 
-                <div class="estiloarmas" id="arcos">
-                    <h3>Arcos</h3>
-                    <hr class="subrayado">
-                    <div class="armaTarjeta">
-                        <img class="arma5" src="../Multimedia/Arcos/Agitador_del_Relampago.png" alt="">
-                        <div class="tarjeta">
-                            <h4>Agitador del Relámpago</h4>
-                            <ul>
-                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
-                                <li>Stat básica: ATQ Base 46.0</li>
-                                <li>Stat secundaria: 14.4 Daño CRIT%</li>
-                                <li>Obtención: Gachapón</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="armaTarjeta">
-                        <img class="arma5" src="../Multimedia/Arcos/Alas_Celestiales.png" alt="">
-                        <div class="tarjeta">
-                            <h4>Alas Celestiales</h4>
-                            <ul>
-                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
-                                <li>Stat básica: ATQ Base 48.0</li>
-                                <li>Stat secundaria: 4.8 Prob. CRIT%</li>
-                                <li>Obtención: Gachapón</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="armaTarjeta">
-                        <img class="arma5" src="../Multimedia/Arcos/Arco_de_Amos.png" alt="">
-                        <div class="tarjeta">
-                            <h4>Arco de Amos</h4>
-                            <ul>
-                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
-                                <li>Stat básica: ATQ Base 46.0</li>
-                                <li>Stat secundaria: 10.8 ATQ%</li>
-                                <li>Obtención: Gachapón</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="armaTarjeta">
-                        <img class="arma5" src="../Multimedia/Arcos/Elegia_del_Fin.png" alt="">
-                        <div class="tarjeta">
-                            <h4>Elegía del Fin</h4>
-                            <ul>
-                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
-                                <li>Stat básica: ATQ Base 46.0</li>
-                                <li>Stat secundaria: 12.0 Recarga de Energía% </li>
-                                <li>Obtención: Gachapón</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="armaTarjeta">
-                        <img class="arma5" src="../Multimedia/Arcos/Estrella_Invernal.png" alt="">
-                        <div class="tarjeta">
-                            <h4>Estrella Invernal</h4>
-                            <ul>
-                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
-                                <li>Stat básica: ATQ Base 46.0</li>
-                                <li>Stat secundaria: 7.2 Prob. CRIT%</li>
-                                <li>Obtención: Gachapón</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-            
-                <div class="estiloarmas" id="catalizador">
-                    <h3>Catalizador</h3>
+        </main>
 
-                </div>
-                <div class="estiloarmas" id="mandoble">
-                    <h3>Mandoble</h3>
-                </div>
-                <div class="estiloarmas" id="espada">
-                    <h3>Espada</h3>
-                </div>
-                <div class="estiloarmas" id="lanza">
-                    <h3>Lanza</h3>
-                </div>
-            </div> 
-        </div>
-       </main>
-
-    <footer class="footerGrid">
-        <p class="footer_title">SIGUENOS</p>
-        <div class="redes">
-            <a href=""><img src="../multimedia/Instagram-icon.png" alt=""/></a>
-            <a href=""><img src="../multimedia/Twitter-icon.png" alt=""/></a>
-            <a href=""><img src="../multimedia/tumblr-icon.png" alt=""/></a>
-        </div>
-        <p class="footer_copy">Copyright 1997-2022 - Prohibida la reproducción total o parcial de estos contenidos sin el permiso expreso de los autores.</p>
-    </footer>
+        <footer class="footerGrid row">
+            <p class="footer_title col-12">SIGUENOS</p>
+            <div class="redes col-12">
+                <a href=""><img src="../multimedia/Instagram-icon.png" alt="" /></a>
+                <a href=""><img src="../multimedia/Twitter-icon.png" alt="" /></a>
+                <a href=""><img src="../multimedia/tumblr-icon.png" alt="" /></a>
+            </div>
+            <p class="footer_copy col-12">Copyright 1997-2022 - Prohibida la reproducción total o parcial de estos contenidos
+                sin el permiso expreso de los autores.</p>
+        </footer>
     </div>
 </body>
+
 </html>
