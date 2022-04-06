@@ -3,7 +3,7 @@ padding: 0;}
 
 
 
-    /* .contenedorGrid {  display: grid;
+/*     .contenedorGrid {  display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3.1fr 0.3fr;
         gap: 20px 0px;
@@ -14,7 +14,7 @@ padding: 0;}
         "mainGrid"
         "footerGrid";
         align-content: space-between;
-    } */
+    }  */
   
     .logoGrid { grid-area: logoGrid; }
     .logoGrid img {
@@ -444,7 +444,7 @@ footer img {
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 576px){
     .submenu {
         display: flex;
         flex-direction: column;
@@ -574,7 +574,7 @@ footer img {
     
 }
 
-@media only screen and (min-width:500px) and (max-width: 768px) {
+@media only screen and (min-width:576px) and (max-width: 768px) {
     .contenedorGrid {  display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.1fr 3.4fr 0.3fr;
